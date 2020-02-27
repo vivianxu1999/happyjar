@@ -18,6 +18,7 @@ var history = require('./routes/seeHistories');
 var text = require('./routes/writeText');
 var image = require('./routes/uploadImage');
 var about = require('./routes/about');
+var login = require('./routes/login');
 
 
 
@@ -47,7 +48,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', home.view);
+app.get('/home', home.view);
 app.get('/hello/:userName', hello.view);
 app.get('/project/:name', project.viewProject);
 app.get('/home', home.view);
@@ -56,6 +57,7 @@ app.get('/text', text.view);
 app.get('/image', image.view);
 app.get('/writeText', text.submitWriteText);
 app.get('/about', about.view)
+app.get('/', login.view)
 
 const upload = multer({
   dest: "/tmp/"
