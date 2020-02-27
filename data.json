@@ -1,0 +1,16 @@
+{
+	"histories": [
+		{
+			"content": "Today is a nice day! Met lots of Corgis!",
+			"imageURL": "corgi.jpg"			
+		},
+		{
+			"content": "Work out for 1.5 hrs and had a match ice cream!",
+			"imageURL": "matcha.jpg"			
+		},
+		{
+			"content": "Finished HCI home work, FIGHT ON!",
+			"imageURL": ""			
+		}
+	]
+}

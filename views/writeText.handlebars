@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Welcome to Happy Tank!</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/navbar.css" rel="stylesheet">
+	<link href="/css/buttons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+
+<div class="icon-bar">
+  <a href="/"><i class="fa fa-home"></i></a> 
+  <a class="active" href="/text"><i class="fa fa-pencil"></i></a> 
+  <a href="/image"><i class="fa fa-camera-retro"></i></a> 
+  <a href="/history"><i class="fa fa-history"></i></a>
+  <a href="/about"><i class="fa fa-question"></i></a> 
+</div>
+
+</head>
+
+<body bgcolor="lavenda">
+
+	<div class="container" id="upload_div">
+		
+
+	<form id="writeTextFrom" role="form" method="get" action="/writeText" >
+	    <div id='buttonId' class="form-group" >
+
+	      <textarea rows="10"  placeholder="How are you feeling today?" name="content" id="content"></textarea>
+	    </div>
+	    <input type="submit" id="submitBtn" class="myButton" value="Submit"></input>
+	</form>
+	
+	<div>
+		<p id="successMsg" style="color:green";></p>
+	</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/writeTextInitialize.js"></script>
+	
+</body>
+</html>
+
+
