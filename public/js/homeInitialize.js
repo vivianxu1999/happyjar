@@ -5,6 +5,11 @@ $(document).ready(function() {
 	initializePage();
 });
 
+function signOut() {
+    window.location.replace("/");
+
+}
+
 function typeEffect(element, speed) {
   var text = element.innerHTML;
   element.innerHTML = "";

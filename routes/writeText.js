@@ -19,7 +19,10 @@ exports.submitWriteText = function(req, res){
 
 	console.log(data)
 
-
+	res.writeHead(302, {
+  		'Location': '/history'
+	});
+	res.end();
 
 	// txt = JSON.stringify(data);  //reserialize to JSON
 };

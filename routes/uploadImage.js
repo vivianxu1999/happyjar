@@ -45,7 +45,8 @@ exports.uploadImage = function(req, res) {
 
         res
           .status(200)
-          .contentType("text/plain");
+          .contentType("text/html")
+          .end('<head><script src="https://code.jquery.com/jquery.js"></script><script>$(document).ready(function() {$(location).attr("href", "/history")});</script></head>')
           //.end("File uploaded!");
 		});
     } else {
@@ -58,6 +59,8 @@ exports.uploadImage = function(req, res) {
           .end("Only .png files are allowed!");
       });
     }
+
+
   };
 
 

@@ -14,6 +14,11 @@ function initializePage() {
 	});
 };
 
+function showSuccessMsg() {
+	console.log('show success msg')
+	$('#successMsg').text('Message successfully uploaded!');
+}
+
 	// Handlebars.registerHelper('checkEmptyString', function(value, comparator) {
  //    	return (value === comparator) ? 'No content' : value;
 	// });
