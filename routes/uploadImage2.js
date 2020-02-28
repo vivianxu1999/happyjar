@@ -1,7 +1,7 @@
 // var path = require('path');
 var fs = require("fs");
 var cloudinary = require('cloudinary').v2;
-var data = require("../data.json");
+var data = require("../data2.json");
 cloudinary.config({ 
   cloud_name: 'hjtheir6o', 
   api_key: '821554757443318', 

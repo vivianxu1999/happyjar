@@ -1,4 +1,4 @@
-var data = require("../data.json");
+var data = require("../data1.json");
 
 exports.view = function(req, res){
 	console.log("In home page. ");

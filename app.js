@@ -73,11 +73,16 @@ const upload = multer({
 });
 
 app.post(
-  "/uploadImage",
+  "/uploadImage1",
   upload.single("file" /* name attribute of <file> element in your form */),
-  image.uploadImage
+  image1.uploadImage
 );
 
+app.post(
+  "/uploadImage2",
+  upload.single("file" /* name attribute of <file> element in your form */),
+  image2.uploadImage
+);
 
 // Example route
 // app.get('/users', user.list);
