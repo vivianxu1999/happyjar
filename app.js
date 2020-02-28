@@ -57,7 +57,6 @@ app.get('/text1', text1.view);
 app.get('/image1', image1.view);
 app.get('/writeText1', text1.submitWriteText);
 app.get('/about1', about1.view)
-app.get('/page_A', login1.view)
 
 app.get('/home2', home2.view);
 app.get('/history2', history2.view);
@@ -65,7 +64,7 @@ app.get('/text2', text2.view);
 app.get('/image2', image2.view);
 app.get('/writeText2', text2.submitWriteText);
 app.get('/about2', about2.view)
-app.get('/page_B', login2.view)
+app.get('/', login2.view)
 
 const upload = multer({
   dest: "/tmp/"
