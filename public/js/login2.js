@@ -73,5 +73,5 @@
 function loginUsingPassword() {
 	console.log("loginUsingPassword!")
 
-	window.location.replace("/home");
+	window.location.replace("/home2");
 }

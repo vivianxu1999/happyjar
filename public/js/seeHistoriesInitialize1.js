@@ -12,6 +12,6 @@ function initializePage() {
   		console.log("upload piciture");
   		// return res.redirect("sdf");
   		//$("#uploadPictureDiv").hide();
-  		$(location).attr('href', '/home')
+  		$(location).attr('href', '/home1')
 	});
 }

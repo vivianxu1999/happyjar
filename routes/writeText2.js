@@ -3,7 +3,7 @@ var data = require("../data.json");
 exports.view = function(req, res){
 	console.log("In home page. ");
 	
-	res.render('writeText');
+	res.render('writeText2');
 };
 
 exports.submitWriteText = function(req, res){
@@ -20,7 +20,7 @@ exports.submitWriteText = function(req, res){
 	console.log(data)
 
 	res.writeHead(302, {
-  		'Location': '/history'
+  		'Location': '/history2'
 	});
 	res.end();
 

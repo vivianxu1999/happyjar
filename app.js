@@ -3,7 +3,6 @@
  * Module dependencies.
  */
 
-
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -12,17 +11,19 @@ var handlebars = require('express3-handlebars')
 var multer = require("multer");
 var cloudinary = require('cloudinary').v2;
 
-var index = require('./routes/index');
-var project = require('./routes/project');
-var hello = require('./routes/hello');
-var home = require('./routes/home');
-var history = require('./routes/seeHistories');
-var text = require('./routes/writeText');
-var image = require('./routes/uploadImage');
-var about = require('./routes/about');
-var login = require('./routes/login');
+var home1 = require('./routes/home1');
+var history1 = require('./routes/seeHistories1');
+var text1 = require('./routes/writeText1');
+var image1 = require('./routes/uploadImage1');
+var about1 = require('./routes/about1');
+var login1 = require('./routes/login1');
 
-
+var home2 = require('./routes/home2');
+var history2 = require('./routes/seeHistories2');
+var text2 = require('./routes/writeText2');
+var image2 = require('./routes/uploadImage2');
+var about2 = require('./routes/about2');
+var login2 = require('./routes/login2');
 // Example route
 // var user = require('./routes/user');
 
@@ -50,16 +51,21 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/home', home.view);
-app.get('/hello/:userName', hello.view);
-app.get('/project/:name', project.viewProject);
-app.get('/home', home.view);
-app.get('/history', history.view);
-app.get('/text', text.view);
-app.get('/image', image.view);
-app.get('/writeText', text.submitWriteText);
-app.get('/about', about.view)
-app.get('/', login.view)
+app.get('/home1', home1.view);
+app.get('/history1', history1.view);
+app.get('/text1', text1.view);
+app.get('/image1', image1.view);
+app.get('/writeText1', text1.submitWriteText);
+app.get('/about1', about1.view)
+app.get('/page_A', login1.view)
+
+app.get('/home2', home2.view);
+app.get('/history2', history2.view);
+app.get('/text2', text2.view);
+app.get('/image2', image2.view);
+app.get('/writeText2', text2.submitWriteText);
+app.get('/about2', about2.view)
+app.get('/page_B', login2.view)
 
 const upload = multer({
   dest: "/tmp/"

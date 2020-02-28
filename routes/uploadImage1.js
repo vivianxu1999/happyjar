@@ -11,7 +11,7 @@ cloudinary.config({
 exports.view = function(req, res){
 	console.log("In home page. ");
 	
-	res.render('uploadImage');
+	res.render('uploadImage1');
 };
 
 
@@ -50,7 +50,7 @@ exports.uploadImage = function(req, res) {
        res
           .status(200)
           .contentType("text/html")
-          .end('<head><script src="https://code.jquery.com/jquery.js"></script><script>$(document).ready(function() {$(location).attr("href", "/history")});</script></head>')
+          .end('<head><script src="https://code.jquery.com/jquery.js"></script><script>$(document).ready(function() {$(location).attr("href", "/history1")});</script></head>')
 
     })
 
