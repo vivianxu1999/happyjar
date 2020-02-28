@@ -3,12 +3,14 @@
  * Module dependencies.
  */
 
+
 var express = require('express');
 var http = require('http');
 var path = require('path');
 var fs = require("fs");
 var handlebars = require('express3-handlebars')
 var multer = require("multer");
+var cloudinary = require('cloudinary').v2;
 
 var index = require('./routes/index');
 var project = require('./routes/project');
@@ -21,7 +23,6 @@ var about = require('./routes/about');
 var login = require('./routes/login');
 
 
-
 // Example route
 // var user = require('./routes/user');
 
@@ -32,6 +33,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
+app.set('CLOUDINARY_URL', 'cloudinary://821554757443318:Q2a12Dps3FjbfMBnc8V3ErssUWo@hjtheir6o'); 
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
