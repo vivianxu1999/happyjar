@@ -72,11 +72,11 @@
 
 function loginUsingPassword() {
 	console.log("loginUsingPassword!")
-    var toggle = Math.floor(Math.random() * 2);
-    if(toggle == 0) {
-        window.location.replace("/home1");
-    } else {
-        window.location.replace("/home2");
-    }
-	
+    //var toggle = Math.floor(Math.random() * 2);
+    //if(toggle == 0) {
+    //    window.location.replace("/home1");
+    //} else {
+    //    window.location.replace("/home2");
+    //}
+	window.location.replace("/home1");
 }
