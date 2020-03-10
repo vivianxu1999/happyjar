@@ -78,5 +78,5 @@ function loginUsingPassword() {
     //} else {
     //    window.location.replace("/home2");
     //}
-	window.location.replace("/home1");
+	window.location.replace("/history2");
 }
