@@ -1,5 +1,10 @@
 $(document).ready(function() {
 	initializePage();
+
+	$("#uploadFileButton").change(function() {   		
+		filename = this.files[0].name   		
+		$("#uploadFileButtonFileName").text(filename);   		
+		console.log(filename); 	});
 });
 
 function initializePage() {

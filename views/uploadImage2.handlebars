@@ -50,9 +50,10 @@
 	<div>
 	<form method="post" enctype="multipart/form-data" action="/uploadImage2">
 	 <textarea rows="10"  placeholder="How are you feeling today?" name="content" id="content"></textarea>
-	 <label class="custom-file-upload">
-    	<input type="file" name="file" >
-	 </label>
+	 <label for="uploadFileButton" class="custom-file-upload">      	
+	   Upload Image 	
+	</label> 	
+	 <input type="file" name="file" id="uploadFileButton" style="visibility:hidden;height:0;">  	 <div><p id="uploadFileButtonFileName" style="color:black;font-size:80%;height:20px;"></p></div>
     
     <input type="submit" value="Submit" id="submitBtn" class="myButton" >
 	</form>
